@@ -6,14 +6,13 @@
 
 body{
     font-family: 'Arial', sans-serif;
-    background-color: #e1c4c4;
-    color: #333;
 }
 
 #wrapper {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
+  background: linear-gradient(to bottom, #93A5CF, #E4EfE9); /* Added gradient background */
 }
 
 .container {
@@ -39,7 +38,7 @@ body{
   width: 32%;
   height: 400px;
   position: relative;
-  margin-bottom: 0;
+  margin-bottom: 32px;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -48,12 +47,14 @@ body{
 .card-video {
   display: none;
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   z-index: 1;
+  background: black; /* Ensures no white bars if aspect ratio differs */
 }
-
 .card:hover .card-img {
   display: none;
 }
