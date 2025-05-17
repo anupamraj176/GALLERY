@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="wrapper">
+    <div class="container">
+      <h1>My Video Gallery</h1>
+
+      <!-- Tag Filter Section -->
+      <div class="tag-filter">
+        <button class="tag-btn active" data-tag="All">All</button>
+        <button class="tag-btn" data-tag="Nature">Nature</button>
+        <button class="tag-btn" data-tag="Tech">Tech</button>
+        <button class="tag-btn" data-tag="Travel">Travel</button>
+      </div>
+
+      <!-- Video Gallery -->
+      <div class="gallery">
+        <figure class="card" data-tags="Nature">
+          <img src="./assets/images/Nature.png" alt="Ocean Waves">
+          <div class="tags">
+            <span class="nature">Nature</span>
+          </div>
+          <figcaption>Ocean Waves</figcaption>
+          <div class="video-url hidden">https://www.youtube.com/embed/1Q8fG0TtVAY</div>
+        </figure>
+        
+        <figure class="card" data-tags="Tech">
+          <img src="./assets/images/Tech.jpg" alt="The Future of Tech in 2025">
+          <div class="tags">
+            <span class="tech">Tech</span>
+          </div>
+          <figcaption>The Future of Tech in 2025</figcaption>
+          <div class="video-url hidden">https://www.youtube.com/embed/5b5uL5KyXqA</div>
+        </figure>
+
+        <figure class="card" data-tags="Travel">
+          <img src="./assets/images/Travel.jpg" alt="City Tour">
+          <div class="tags">
+            <span class="travel">Travel</span>
+          </div>
+          <figcaption>City Tour</figcaption>
+          <div class="video-url hidden">https://www.youtube.com/embed/9bZkp7q19f0</div>
+        </figure>
+
+        <figure class="card" data-tags="Nature">
+          <img src="./assets/images/Nature2.jpg" alt="Relaxing Forest Stream">
+          <div class="tags">
+            <span class="nature">Nature</span>
+          </div>
+          <figcaption>Relaxing Forest Stream</figcaption>
+          <div class="video-url hidden">https://www.youtube.com/embed/0kpn5E0MP0A</div>
+        </figure>
+
+
+        <figure class="card" data-tags="Tech">
+          <img src="./assets/images/Tech (2).jpg" alt="AI Explained">
+          <div class="tags">
+            <span class="tech">Tech</span>
+          </div>
+          <figcaption>AI Explained</figcaption>
+          <div class="video-url hidden">https://www.youtube.com/embed/xoVJKj8lcNQ</div>
+        </figure>
+
+        <figure class="card" data-tags="Travel">
+          <img src="./assets/images/BeachWalk.jpg" alt="Beach Walk">
+          <div class="tags">
+            <span class="travel">Travel</span>
+          </div>
+          <figcaption>Beach Walk</figcaption>
+          <div class="video-url hidden">https://www.youtube.com/embed/9bZkp7q19f0</div>
+        </figure>
+
+
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="videoModal" class="modal hidden">
+      <div class="modal-content">
+        <span id="closeModal">×</span>
+        <iframe id="videoFrame" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
