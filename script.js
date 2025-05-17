@@ -1,4 +1,3 @@
-// Modal Functionality
 const modal = document.getElementById("videoModal");
 const videoFrame = document.getElementById("videoFrame");
 const closeModal = document.getElementById("closeModal");

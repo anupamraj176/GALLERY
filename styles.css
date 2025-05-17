@@ -84,28 +84,29 @@ body{
 
 .card figcaption {
   position: absolute;
-  top: 0;
   left: 0;
+  bottom: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
+  min-height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #fff;
   opacity: 0;
-  border-radius: 10px;
-  background: rgba(0,0,0,0.45);
-  transition: 0.3s;
+  border-radius: 0 0 10px 10px;
+  background: rgba(0,0,0,0); /* No overlay, fully transparent */
+  transition: opacity 0.3s, transform 0.3s;
   text-align: center;
-  padding: 0 20px;
-  z-index: 2; /* Above video */
+  padding: 12px 20px;
+  z-index: 2;
 }
 
 .card:hover figcaption {
   opacity: 1;
-  transform: scale(1.03);
+  transform: translateY(0);
 }
 
 /* Tag Filter Section */
@@ -113,7 +114,7 @@ body{
   display: flex;
   justify-content: center;
   margin-bottom: 24px;
-  gap: 16px;
+  gap: 21px;
 }
 .tag-btn {
   position: relative;
