@@ -13,7 +13,7 @@ cards.forEach(card => {
 
 closeModal.addEventListener("click", () => {
   modal.classList.add("hidden");
-  videoFrame.src = ""; // Stop video playback
+  videoFrame.src = ""; 
 });
 
 // Close modal when clicking outside the modal content
